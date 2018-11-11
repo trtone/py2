@@ -1,7 +1,9 @@
 # Открытие файла
 temperature = []
 
-with open('C:/temperature.txt') as t:
+
+# r помогло задать путь, без него выдвало ошибку 
+with open(r'C:\temperture.txt') as t:
     for line in t:
         temperature.append(int(line))
 print(temperature)
